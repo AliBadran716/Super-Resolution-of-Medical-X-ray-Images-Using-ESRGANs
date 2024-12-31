@@ -234,3 +234,44 @@ model.compile(
     perceptual_weight=1.0,
     adversarial_weight=0.1
 )
+
+# Load data
+data_loader = DataLoader(image_dir='Dataset/images', batch_size=16, hr_size=128, scale_factor=4)
+
+# Training loop
+for lr_images, hr_images in data_loader.dataset:
+    losses = model.train_step(lr_images, hr_images)
+    print(losses)
+    break  # Just one batch for demonstration
+
+# Visualize the loss values
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.plot(losses['content_loss'], label='Content Loss')
+plt.plot(losses['perceptual_loss'], label='Perceptual Loss')
+plt.plot(losses['gen_loss'], label='Generator Loss')
+plt.plot(losses['disc_loss'], label='Discriminator Loss')
+plt.legend()
+plt.show()
+
+# Visualize the generated images and original high-res images and low-res images
+plt.figure(figsize=(15, 15))
+for i in range(4):
+    plt.subplot(4, 3, i*3 + 1)
+    plt.imshow(tf.squeeze(lr_images[i]), cmap='gray')
+    plt.title('Low-res')
+    plt.axis('off')
+    
+    plt.subplot(4, 3, i*3 + 2)
+    plt.imshow(tf.squeeze(hr_images[i]), cmap='gray')
+    plt.title('High-res')
+    plt.axis('off')
+    
+    sr_images = model.generator(lr_images, training=False)
+    plt.subplot(4, 3, i*3 + 3)
+    plt.imshow(tf.squeeze(sr_images[i]), cmap='gray')
+    plt.title('Super-res')
+    plt.axis('off')
+
+plt.show()
