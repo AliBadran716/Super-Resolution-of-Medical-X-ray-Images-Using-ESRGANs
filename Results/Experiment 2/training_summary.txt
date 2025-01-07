@@ -1,0 +1,25 @@
+ESRGAN Training Summary
+======================
+
+Total Epochs: 15
+
+Final Losses:
+  content_loss: 0.0195
+  perceptual_loss: 0.0233
+  gen_loss: 0.6238
+  disc_loss: 1.3863
+  total_gen_loss: 0.6666
+
+Best Performing Epochs:
+  content_loss: Epoch 15
+  perceptual_loss: Epoch 15
+  gen_loss: Epoch 1
+  disc_loss: Epoch 1
+  total_gen_loss: Epoch 15
+
+Improvement Rates:
+  content_loss: 53.72%
+  perceptual_loss: 58.87%
+  gen_loss: -1.82%
+  disc_loss: -3.62%
+  total_gen_loss: 6.30%
