@@ -65,3 +65,34 @@ Metrics such as **PSNR (Peak Signal-to-Noise Ratio)**, **SSIM (Structural Simila
 PSNR: 32.9906
 SSIM: 0.9257
 MSE: 0.0006
+
+## Contributors <a name = "Contributors"></a>
+
+<table>
+  <tr>
+    <td align="center">
+    <a href="https://github.com/Muhannad159" target="_black">
+    <img src="https://avatars.githubusercontent.com/u/104541242?v=4" width="150px;" alt="Muhannad Abdallah"/>
+    <br />
+    <sub><b>Muhannad Abdallah</b></sub></a>
+    </td>
+  <td align="center">
+    <a href="https://github.com/AliBadran716" target="_black">
+    <img src="https://avatars.githubusercontent.com/u/102072821?v=4" width="150px;" alt="Ali Badran"/>
+    <br />
+    <sub><b>Ali Badran</b></sub></a>
+    </td>
+     <td align="center">
+    <a href="https://github.com/ahmedalii3" target="_black">
+    <img src="https://avatars.githubusercontent.com/u/110257687?v=4" width="150px;" alt="Ahmed Ali"/>
+    <br />
+    <sub><b>Ahmed Ali</b></sub></a>
+    </td>
+<td align="center">
+    <a href="https://github.com/ossama971" target="_black">
+    <img src="https://avatars.githubusercontent.com/u/40814982?v=4" width="150px;" alt="Hassan Hussein"/>
+    <br />
+    <sub><b>Osama Badawi</b></sub></a>
+    </td>
+      </tr>
+ </table>
