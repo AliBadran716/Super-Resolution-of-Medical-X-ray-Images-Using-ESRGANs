@@ -50,7 +50,7 @@ The project includes result visualization to compare the input and output images
 
 Input (32\*32) >> Output (128\*128)
 
-![Example1](./Results/results1.png)
+![Example1](./Results/results3.png)
 
 Input (64\*64) >> Output (256\*256)
 
@@ -58,7 +58,7 @@ Input (64\*64) >> Output (256\*256)
 
 Input (128\*128) >> Output (512\*512)
 
-![Example1](./Results/results3.png)
+![Example1](./Results/results1.png)
 
 Metrics such as **PSNR (Peak Signal-to-Noise Ratio)**, **SSIM (Structural Similarity Index)**, and **MSE (Mean Squared Error)**are calculated to validate the enhancement quality.
 
